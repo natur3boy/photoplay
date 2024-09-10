@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoplayLK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-card {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .service h3 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .service p {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer .social-icons {
+            margin: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer .contact-info {
+            margin: 10px 0;
+        }
+
+        footer .center-text {
+            text-align: center;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Photoplay</h1>
+    </header>
+
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#goal">Goal</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="welcome" class="section">
+            <h2>Welcome</h2>
+            <p>Welcome to our Photoplay. We are dedicated to providing top-notch media services tailored to meet your
+                specific needs. Whether you're looking for video production, graphic design, or digital marketing, we've
+                got you covered.</p>
+            <img src="/Users/nikeshjoshua/Desktop/photoplay/download.jpg" alt="Welcome Image">
+        </div>
+        <div id="about" class="section">
+            <h2>About</h2>
+            <p>Our company was founded with the mission of delivering high-quality media solutions to clients worldwide.
+                Our team of experienced professionals is passionate about creating content that not only meets but
+                exceeds expectations.</p>
+            <img src="/Users/nikeshjoshua/Desktop/photoplay/download.jpg" alt="About Image">
+        </div>
+        <div id="goal" class="section">
+            <h2>Goal</h2>
+            <p>Our goal is to help businesses and individuals achieve their vision through innovative media solutions.
+                We aim to be a trusted partner in your success, providing the tools and expertise you need to
+                communicate effectively and grow your brand.</p>
+            <video controls>
+                <source src="/Users/nikeshjoshua/Desktop/photoplay/download.jpg" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>*/
+        </div>
+        <div id="services" class="section">
+            <h2>Types of Services</h2>
+            <div class="services-card">
+                <div class="service">
+                    <h3>Video Production</h3>
+                    <img src="path_to_your_video_production_image.jpg" alt="Video Production">
+                    <p>We offer professional video production services, including filming, editing, and post-production.
+                        Our team creates engaging videos that tell your story and captivate your audience.</p>
+                    <video controls>
+                        <source src="path_to_your_video_production_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="service">
+                    <h3>Graphic Design</h3>
+                    <img src="path_to_your_graphic_design_image.jpg" alt="Graphic Design">
+                    <p>Our graphic design services cover a wide range of needs, from branding and logos to marketing
+                        materials and web design. We bring your vision to life with stunning visuals.</p>
+                </div>
+                <div class="service">
+                    <h3>Digital Marketing</h3>
+                    <img src="path_to_your_digital_marketing_image.jpg" alt="Digital Marketing">
+                    <p>We provide comprehensive digital marketing services, including social media management, SEO, and
+                        online advertising. Our strategies help you reach your target audience effectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="contact" class="contact-info">
+            <p>PhotoplayLK</p>
+            <p>Email: info@mediacompany.com</p>
+            <p>Contact: (123) 456-7890</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/photoplaylk/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@PhotoplayLK" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=100088841436176" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+        </div>
+        <div class="center-text">
+            <p>&copy; 2024 Photoplay. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
